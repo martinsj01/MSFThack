@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Analytics Dashboard</title>
+    <style>
+        /* Add your CSS here */
+    </style>
+</head>
+<body>
+    <h1>Humanitarian Crisis Relief Analytics Dashboard</h1>
+
+    <h2>Facebook Insights</h2>
+    {% for insight in facebook_insights %}
+        <div class="insight">
+            <!-- Display your Facebook insights here -->
+            {{ insight }}
+        </div>
+    {% endfor %}
+
+    <h2>Twitter Insights</h2>
+    {% for insight in twitter_insights %}
+        <div class="insight">
+            <!-- Display your Twitter insights here -->
+            {{ insight }}
+        </div>
+    {% endfor %}
+
+    <h2>Instagram Insights</h2>
+    {% for insight in instagram_insights %}
+        <div class="insight">
+            <!-- Display your Instagram insights here -->
+            {{ insight }}
+        </div>
+    {% endfor %}
+
+    <a href="/">Go back to Home</a>
+</body>
+</html>
+
